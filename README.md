@@ -1,6 +1,8 @@
 # sh-delpierropark (LunaPark Lua OO)
 
-# by shruog my Discord: https://discord.gg/QkT8hUu9FR
+## by shruog my Discord: https://discord.gg/QkT8hUu9FR
+
+### [original author github](https://github.com/Bluscream/LunaPark-FiveM)
 
 [🇺🇸 English](#-english) | [🇧🇷 Português](#-português) | [🇪🇸 Español](#-español)
 
