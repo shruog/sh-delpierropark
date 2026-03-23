@@ -4,13 +4,27 @@
 
 [🇺🇸 English](#-english) | [🇧🇷 Português](#-português) | [🇪🇸 Español](#-español)
 
----
+![Demo Logo](upload://9LbIiNZXVD2GhRgPxHwlsLTOsgO.jpeg)
 
+**Demonstration video:** [https://streamable.com/f8io04](https://streamable.com/f8io04)
+
+| Feature | Info |
+|-------------|------------|
+| Code is accessible | Yes |
+| Subscription-based | No |
+| Lines (approximately)| ~1,500 |
+| Requirements | None |
+| Support | Yes |
+
+---
 ## 🇺🇸 English
+
+> ⚠️ **Note:** This is not a plug-and-play script. It needs some fixes but has open code in Lua.
 
 A FiveM resource that adds realistic and synchronized functionality to the Ferris Wheel and Roller Coaster at Del Perro Pier.
 
-This script is based on the original logic from [LunaPark-FiveM](https://github.com/Bluscream/LunaPark-FiveM), but it has been completely rewritten and modernized in **Object-Oriented (OO) Lua**, focusing on stability and flawless player synchronization.
+### This script was converted to Lua OOP by me
+I implemented some functions to improve performance. When there are no players near the Ferris wheels or roller coasters, the script puts the thread to "sleep". It still needs more testing and improvements.
 
 ### 🌟 Key Features
 - **Fully Functional Roller Coaster:** Smooth cart movement, waiting times, and multi-seat support.
@@ -18,6 +32,11 @@ This script is based on the original logic from [LunaPark-FiveM](https://github.
 - **"Host-Based" (Server Authoritative) Synchronization:** To prevent desync issues, the active player with the lowest *server-id* acts as the physics *host*. The server flawlessly relays physics events to all other clients.
 - **Object-Oriented Lua:** Source code structured in classes for better modularity, easy to iterate and expand.
 - **Total Immersion:** Utilizes native audio sets (`AudioScenes` / `SoundSets`), custom camera transitions, and native animations.
+
+### 🐛 Known Issues
+- Players need to be attached to the Ferris wheel cabin and rollercoaster car.
+- Needs more tests, but it has sync; it only needs players to be attached to the object positions.
+- I tried improving performance by putting it in sleep mode, but I created a simple bug regarding instructional buttons (I prefer to use instructional buttons with a very simple NUI).
 
 ### 📋 How to Install
 1. Download the script and place the `sh-delpierropark` folder inside your server's `resources` directory (or a subfolder).
@@ -32,21 +51,23 @@ The entire script is configurable via the `shared/config.lua` file. You can adju
 - Boarding and exit positions
 - Cameras and prop model IDs
 
-### 📌 Support & Contact
-Join our Discord for support on this resource, news, community chats, and to interact with us!
-🔗 [**Click here to join the Discord: https://discord.gg/QkT8hUu9FR**](https://discord.gg/QkT8hUu9FR)
+### 📌 Support & Links
 
-#### Credits
-- **Author (Lua OO Version):** shruog
-- **Original Idea & Repo:** [Bluscream/LunaPark-FiveM](https://github.com/Bluscream/LunaPark-FiveM)
+**My Discord:** [Shruog Corphate Store](https://discord.gg/xddPEQEgUg)  
+*Maybe I can help you with something more about this script...*
+
+- **Download Here (Repository):** [shruog/sh-delpierropark](https://github.com/shruog/sh-delpierropark)
+- **Original Author Repository:** [Bluscream/LunaPark-FiveM](https://github.com/Bluscream/LunaPark-FiveM)
 
 ---
-
 ## 🇧🇷 Português
+
+> ⚠️ **Aviso:** Este não é um script "plug and play". Precisa de algumas correções, mas o código é aberto em Lua.
 
 Um resource para FiveM que adiciona funcionamento realístico e sincronizado à Roda Gigante (Ferris Wheel) e à Montanha Russa (Roller Coaster) no Píer Del Perro.
 
-Este script é baseado na lógica original do [LunaPark-FiveM](https://github.com/Bluscream/LunaPark-FiveM), porém foi totalmente reescrito e modernizado em **Lua Orientado a Objetos (OO)**, focando em estabilidade e uma sincronização de jogadores impecável.
+### Este script foi convertido para Lua OOP por mim
+Implementei algumas funções para melhorar o desempenho. Quando não há jogadores perto das rodas gigantes ou montanhas-russas, o script coloca a thread em estado de "sleep" (dormir). Ainda precisa de mais testes e melhorias.
 
 ### 🌟 Características Principais
 - **Montanha Russa Completa:** Carrinhos com movimentação suave, tempos de espera e suporte para múltiplos assentos.
@@ -54,6 +75,11 @@ Este script é baseado na lógica original do [LunaPark-FiveM](https://github.co
 - **Sincronização "Host-Based" (Server Authoritative):** Para evitar problemas de dessincronização, o jogador ativo com o menor *server-id* atua como o *host* responsável pela física. O servidor retransmite os eventos de física perfeitamente para todos os outros clientes.
 - **Lua Orientado a Objetos:** Código fonte estruturado em classes para melhor modularidade, fácil de iterar e expandir.
 - **Imersão Total:** Utiliza os conjuntos de áudio (`AudioScenes` / `SoundSets`), transições de câmera customizadas e animações nativas.
+
+### 🐛 Problemas Conhecidos (Known Issues)
+- Os jogadores precisam ser "atachados" (anexados) à cabine da roda gigante e ao carrinho da montanha-russa.
+- Precisa de mais testes, mas possui sincronização; só é necessário anexar os jogadores nas posições corretas dos objetos.
+- Tentei melhorar a performance colocando um modo sleep, mas acabei criando um pequeno bug nos botões de instrução (prefiro usar botões de instrução com uma NUI bem simples).
 
 ### 📋 Como Instalar
 1. Baixe o script e insira a pasta `sh-delpierropark` dentro do diretório `resources` (ou em alguma subpasta) do seu servidor FiveM.
@@ -68,21 +94,23 @@ Todo o script é configurável através do arquivo `shared/config.lua`. Nele voc
 - Posições de embarque e saída
 - Câmeras e IDs dos prop models
 
-### 📌 Suporte & Contato
-Acesse nosso Discord para suporte sobre este resource, novidades, conversas com a comunidade e para interagir conosco!
-🔗 [**Clique aqui para entrar no Discord: https://discord.gg/QkT8hUu9FR**](https://discord.gg/QkT8hUu9FR)
+### 📌 Suporte & Links
 
-#### Créditos
-- **Autor (Versão Lua OO):** shruog
-- **Ideia & Repo Original:** [Bluscream/LunaPark-FiveM](https://github.com/Bluscream/LunaPark-FiveM)
+**Meu Discord:** [Shruog Corphate Store](https://discord.gg/xddPEQEgUg)  
+*Talvez eu possa te ajudar com mais alguma coisa sobre este script...*
+
+- **Download Aqui (Repositório):** [shruog/sh-delpierropark](https://github.com/shruog/sh-delpierropark)
+- **Repositório do Autor Original:** [Bluscream/LunaPark-FiveM](https://github.com/Bluscream/LunaPark-FiveM)
 
 ---
-
 ## 🇪🇸 Español
+
+> ⚠️ **Aviso:** Este no es un script "plug and play". Necesita algunas correcciones, pero tiene código abierto en Lua.
 
 Un recurso para FiveM que añade un funcionamiento realista y sincronizado a la Noria (Ferris Wheel) y a la Montaña Rusa (Roller Coaster) en el muelle de Del Perro.
 
-Este script está basado en la lógica original de [LunaPark-FiveM](https://github.com/Bluscream/LunaPark-FiveM), pero ha sido reescrito por completo y modernizado en **Lua Orientado a Objetos (OO)**, enfocándose en la estabilidad y en una sincronización impecable entre los jugadores.
+### Este script fue convertido a Lua OOP por mí
+Implementé algunas funciones para mejorar el rendimiento. Cuando no hay jugadores cerca de la noria o la montaña rusa, el script pone el hilo en modo "sleep" (suspensión). Aún necesita más pruebas y mejoras.
 
 ### 🌟 Características Principales
 - **Montaña Rusa Funcional:** Carritos con movimiento suave, tiempos de espera y soporte para múltiples asientos.
@@ -90,6 +118,11 @@ Este script está basado en la lógica original de [LunaPark-FiveM](https://gith
 - **Sincronización "Host-Based" (Autoridad del Servidor):** Para evitar problemas de desincronización, el jugador activo con el *server-id* más bajo actúa como el *host* responsable de las físicas. El servidor transmite perfectamente los eventos físicos a todos los demás clientes.
 - **Lua Orientado a Objetos:** Código fuente estructurado en clases para una mejor modularidad, fácil de iterar y expandir.
 - **Inmersión Total:** Utiliza los conjuntos de audio nativos (`AudioScenes` / `SoundSets`), transiciones de cámara personalizadas y animaciones nativas.
+
+### 🐛 Problemas Conocidos (Known Issues)
+- Los jugadores necesitan estar adheridos (attached) a la cabina de la noria y al carrito de la montaña rusa.
+- Necesita más pruebas, pero tiene sincronización; solo falta adherir a los jugadores en las posiciones correctas de los objetos.
+- Intenté mejorar el rendimiento poniendo un modo sleep, pero creé un pequeño error con los botones de instrucción (prefiero usar botones de instrucción con una NUI muy simple).
 
 ### 📋 Cómo Instalar
 1. Descarga el script e inserta la carpeta `sh-delpierropark` dentro del directorio `resources` (o en alguna subcarpeta) de tu servidor de FiveM.
@@ -104,10 +137,10 @@ Todo el script es configurable a través del archivo `shared/config.lua`. En est
 - Posiciones de embarque y salida
 - Cámaras e IDs de los modelos de props
 
-### 📌 Soporte y Contacto
-¡Únete a nuestro Discord para soporte sobre este recurso, noticias, y para interactuar con la comunidad!
-🔗 [**Haz clic aquí para unirte al Discord: https://discord.gg/QkT8hUu9FR**](https://discord.gg/QkT8hUu9FR)
+### 📌 Soporte y Enlaces
 
-#### Créditos
-- **Autor (Versión Lua OO):** shruog
-- **Idea y Repositorio Original:** [Bluscream/LunaPark-FiveM](https://github.com/Bluscream/LunaPark-FiveM)
+**Mi Discord:** [Shruog Corphate Store](https://discord.gg/xddPEQEgUg)  
+*Tal vez pueda ayudarte con algo más sobre este script...*
+
+- **Descargar Aquí (Repositorio):** [shruog/sh-delpierropark](https://github.com/shruog/sh-delpierropark)
+- **Repositorio del Autor Original:** [Bluscream/LunaPark-FiveM](https://github.com/Bluscream/LunaPark-FiveM)
