@@ -55,7 +55,7 @@ The entire script is configurable via the `shared/config.lua` file. You can adju
 
 ### 📌 Support & Links
 
-**My Discord:** [Shruog Corphate Store](https://discord.gg/xddPEQEgUg)  
+**My Discord:** [Shruog Corphate Store](https://discord.gg/ydwuSA9Dwn)  
 *Maybe I can help you with something more about this script...*
 
 - **Download Here (Repository):** [shruog/sh-delpierropark](https://github.com/shruog/sh-delpierropark)
