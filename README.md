@@ -1,8 +1,5 @@
 <img width="517" height="291" alt="image" src="https://github.com/user-attachments/assets/d7ee43f9-fd15-4213-9b83-552d894d14c0" />
 
-
-<img width="517" height="291" alt="image" src="https://github.com/user-attachments/assets/7af74278-01a0-4fc7-941c-a034d8ae101e" /># sh-delpierropark (LunaPark Lua OO)
-
 ## by shruog my Discord: [Join Discord](https://discord.gg/CzCtZm6zBr)
 
 ### [original author github](https://github.com/Bluscream/LunaPark-FiveM)
