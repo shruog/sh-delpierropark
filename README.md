@@ -41,6 +41,8 @@ I implemented some functions to improve performance. When there are no players n
 - I tried improving performance by putting it in sleep mode, but I created a simple bug regarding instructional buttons (I prefer to use instructional buttons with a very simple NUI).
 
 ### 📋 How to Install
+## `Goto [bob74_ipl]\gtav\base.lua at the bottom: and put -- on line 99 "RequestIpl("ferris_finale_anim")" so it looks like "--RequestIpl("ferris_finale_anim")"`
+
 1. Download the script and place the `sh-delpierropark` folder inside your server's `resources` directory (or a subfolder).
 2. Add `ensure sh-delpierropark` to your `server.cfg`.
 3. Restart your server or start it via the admin console.
